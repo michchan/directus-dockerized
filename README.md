@@ -1,3 +1,5 @@
+# directus-dockerized
+
 Dockerized directus with https://github.com/theknightlybuilders/docker-compose-lamp
 
 # LAMP stack built with Docker Compose
@@ -93,4 +95,3 @@ phpMyAdmin is configured to run on port 8080. Use following default credentials.
 http://localhost:8080/  
 username: root  
 password: tiger
-# directus-dockerized

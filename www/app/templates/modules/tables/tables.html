@@ -1,0 +1,34 @@
+<table class="lines cozy clickable fixed-header pad-first">
+    <thead>
+    <tr>
+        {{#columns}}
+        <th scope="col">{{{capitalize this}}}</th>
+        {{/columns}}
+    </tr>
+    </thead>
+    <tbody>
+        {{#rows}}
+        <tr data-id="{{id}}">
+            {{#each ../columns}}<td>{{uiCapitalize ../model this}}</td>{{/each}}
+        </tr>
+        {{/rows}}
+    </tbody>
+</table>
+{{!--
+<table class="table table-striped directus-table" id="directus_tables">
+<thead>
+<tr>
+    <!-- <th class="active">Active</th> -->
+    <th class="table_name">{{t "table_name"}}</th>
+    <!--<th class="modified">Modified</th>-->
+</tr>
+</thead>
+<tbody>
+  {{#rows}}
+    <tr data-id="{{table_name}}">
+      <td>{{{capitalize table_name}}}</td>
+    </tr>
+  {{/rows}}
+</tbody>
+</table>
+--}}
