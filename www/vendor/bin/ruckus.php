@@ -1,1 +1,0 @@
-../directus/migrations/ruckus.php
